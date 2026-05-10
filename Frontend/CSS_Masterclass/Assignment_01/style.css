@@ -14,3 +14,108 @@ body {
   background: #e9e9e9;
 }
 
+.main {
+  width: 95%;
+  height: 95vh;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+
+.left {
+  width: 60%;
+  background: #f4c531;
+  padding: 70px;
+  position: relative;
+}
+
+.left img {
+  width: 120px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  object-fit: contain;
+}
+
+.left h4 {
+  margin-top: 140px;
+  letter-spacing: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.left h1 {
+  font-size: 90px;
+  margin: 20px 0;
+  font-weight: 900;
+  color: #000;
+}
+
+.left p {
+  width: 75%;
+  font-size: 16px;
+  line-height: 35px;
+  color: #222;
+  margin-top: 5px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.right {
+  width: 40%;
+  background: #f8f3df;
+  position: relative;
+}
+
+.right img {
+  width: 650px;
+  position: absolute;
+  top: 50%;
+  left: -270px;
+  transform: translateY(-50%);
+}
+
+.menu {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+
+.menu span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: #111;
+  margin: 7px 0;
+  border-radius: 10px;
+}
+
+.dots {
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+}
+
+.dots span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #f4c531;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+.dots span:first-child {
+  background: #000;
+}
