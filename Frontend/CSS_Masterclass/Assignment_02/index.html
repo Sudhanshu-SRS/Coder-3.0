@@ -1,72 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TASK-2</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <h2>ScaleX</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insect Showcase</title>
 
-      <div class="menu">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-section">
+
+      <!-- LOGO -->
+      <h1 class="logo">INSECT</h1>
+
+      <!-- SEARCH -->
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <!-- VERTICAL TEXT -->
+      <div class="vertical-text">
+        Classification
+      </div>
+
+      <!-- DETAILS -->
+      <div class="details">
+
+        <div class="detail-item">
+          <span>class:</span>
+          <p>insecta</p>
+        </div>
+
+        <div class="detail-item">
+          <span>order:</span>
+          <p>coleoptera</p>
+        </div>
+
+        <div class="detail-item">
+          <span>family:</span>
+          <p>cerambycinae</p>
+        </div>
+
+        <div class="detail-item">
+          <span>sub-family:</span>
+          <p>cerambycinae</p>
+        </div>
+
+        <div class="detail-item">
+          <span>tribe:</span>
+          <p>callichromatini</p>
+        </div>
+
+        <div class="detail-item">
+          <span>genus:</span>
+          <p>pachyteria</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CENTER IMAGE -->
+    <div class="center-image">
+      <!-- Replace this with your PNG -->
+      <img src="./assets/glass_beetle_transparent.png" alt="Beetle">
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="right-section">
+
+      <!-- NAVBAR -->
+      <nav>
         <a href="#">Home</a>
+        <a href="#">Shop</a>
         <a href="#">About</a>
-        <a href="#">Blogs</a>
+        <a href="#">Gallery</a>
         <a href="#">Contact</a>
-      </div>
+      </nav>
 
-      <button>Get Started</button>
-    </nav>
+      <!-- CONTENT -->
+      <div class="content">
 
-    <section class="hero">
-      <h1>Insights & Blogs</h1>
+        <h2>Pachyteria<br>equestris</h2>
 
-      <div class="btns">
-        <button class="active">All</button>
-        <button>Tech</button>
-        <button>SaaS</button>
-        <button>Marketing</button>
-      </div>
+        <div class="info-section">
 
-      <div class="cards">
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop"
-          />
-
-          <div class="content">
-            <span>Tech</span>
-            <h3>The Ultimate Guide To SaaS Marketing</h3>
-            <p>May 23, 2025</p>
+          <div class="bug-icon">
+            <img src="./assets/beetle_icon_transparent.png" alt="Beetle Icon">
+            <p>30 mm</p>
           </div>
+
+          <div class="line"></div>
+
+          <div class="extra-info">
+            
+            <p><img src="./assets/clean_location_symbol.png" alt=""> locality:<br><span>India</span></p>
+
+            <p>⚥ sex:<br><span>Male</span></p>
+
+            <p>↗ size:<br><span>32 mm / 12 mm</span></p>
+          </div>
+
         </div>
 
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
-          />
+        <h3>$5.99</h3>
 
-          <div class="content">
-            <span>SaaS</span>
-            <h3>5 Key Trends In SaaS Growth For 2025</h3>
-            <p>May 23, 2025</p>
+        <!-- TOGGLES -->
+        <div class="toggle-group">
+
+          <div class="toggle-item">
+            <div class="toggle"></div>
+            <span>View detailed antennae</span>
           </div>
+
+          <div class="toggle-item">
+            <div class="toggle"></div>
+            <span>View underside</span>
+          </div>
+
         </div>
 
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=1200&auto=format&fit=crop"
-          />
+        <!-- BUTTON -->
+        <button>Add to collection</button>
 
-          <div class="content">
-            <span>Marketing</span>
-            <h3>How Data-Driven Strategies Are Important</h3>
-            <p>May 23, 2025</p>
-          </div>
-        </div>
       </div>
-    </section>
-  </body>
+
+    </div>
+
+  </div>
+
+</body>
 </html>
