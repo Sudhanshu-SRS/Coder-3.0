@@ -57,6 +57,7 @@ Frontend/
 | Assignment 02 | Frontend CSS Masterclass | 10/05/2026 | 10/05/2026 | [Live Demo](luminous-bombolone-1cd560.netlify.app) |
 | Assignment 03 | Frontend CSS Masterclass | 10/05/2026 | 11/05/2026 | [Live Demo](https://soft-elf-facb87.netlify.app/) |
 | Assignment 04 | Frontend CSS Masterclass | 16/05/2026 | 16/05/2026 | [Live Demo](https://ubiquitous-bublanina-486c71.netlify.app/) |
+| Assignment 05 | Frontend CSS Masterclass | 09/06/2026 | 09/06/2026 | [Live Demo](https://charming-kringle-00d1af.netlify.app/) |
 
 
 > Replace the dates and live demo links after deployment on Netlify.
