@@ -25,3 +25,12 @@ console.log(h1);
 //it return boolen and check wheater it has or not the named attribute
 let response=h1.hasAttribute("background-color")
 console.log(response);
+
+
+// Nameing attributes according to html that is creating attributes according to valid html with data-
+let h2=document.querySelector("#id2")
+let create=h2.getAttribute("data-sudhanshu-create")
+console.log(create);
+let changed=h2.dataset.SudhanshuCreate="123"
+console.log(changed);
+
