@@ -1,0 +1,660 @@
+SECTION E — CODING PROBLEMS
+15 Questions
+Level 1 — Easy
+E1 — Number Analyzer
+
+Write a function:
+
+analyzeNumber(number)
+
+It should return whether the number is:
+
+positive
+negative
+zero
+E2 — Array Sum
+
+Write a function that accepts an array of numbers and returns the total.
+
+Do not use a hard-coded number of elements.
+
+E3 — Even Numbers
+
+Given an array of numbers, return a new array containing only even numbers.
+
+E4 — Student Names
+
+Given:
+
+const students = [
+    { name: "Rahul", marks: 80 },
+    { name: "Amit", marks: 45 },
+    { name: "Priya", marks: 90 },
+    { name: "Neha", marks: 55 }
+];
+
+Return the names of students who scored at least 60.
+
+Level 2 — Medium
+E5 — Word Frequency
+
+Write:
+
+wordFrequency(text)
+
+Example input:
+
+"apple banana apple mango banana apple"
+
+Return an object containing each word's frequency.
+
+E6 — Shopping Cart
+
+Create a shopping-cart object that supports:
+
+addItem()
+removeItem()
+findItem()
+getTotal()
+
+Each item should contain:
+
+id
+name
+price
+quantity
+E7 — To-Do Logic
+
+Create an in-memory todo system supporting:
+
+addTodo(task)
+completeTodo(id)
+removeTodo(id)
+getPendingTodos()
+getCompletedTodos()
+
+Use arrays and objects.
+
+E8 — Library
+
+Create a library system supporting:
+
+addBook(title, author)
+borrowBook(id)
+returnBook(id)
+availableBooks()
+
+Handle invalid IDs and already-borrowed books.
+
+Level 3 — Hard
+E9 — Student Grade System
+
+Create a system that stores:
+
+{
+    id,
+    name,
+    marks: []
+}
+
+Implement functions to:
+
+add student
+add marks
+calculate average
+find topper
+find students who passed
+find students whose average is above a supplied value
+E10 — Inventory System
+
+Create an inventory containing products:
+
+id
+name
+price
+stock
+category
+
+Implement:
+
+addProduct
+sellProduct
+restockProduct
+findProduct
+getLowStockProducts
+getProductsByCategory
+getTotalInventoryValue
+E11 — Data Transformation
+
+Given an array of user objects:
+
+[
+    {
+        id: 1,
+        name: "Rahul",
+        age: 22,
+        active: true
+    },
+    {
+        id: 2,
+        name: "Amit",
+        age: 17,
+        active: false
+    }
+]
+
+Create a function that returns a new array containing only active users, but transforms each result into:
+
+{
+    id,
+    displayName,
+    age
+}
+
+Do not mutate the original array.
+
+Level 4 — Challenging
+E12 — Transaction Analyzer
+
+Given transactions:
+
+[
+    { type: "income", amount: 5000 },
+    { type: "expense", amount: 1200 },
+    { type: "expense", amount: 800 },
+    { type: "income", amount: 3000 }
+]
+
+Build functions that calculate:
+
+total income
+total expense
+balance
+largest expense
+number of expenses
+
+Use appropriate array methods.
+
+E13 — Nested Category Search
+
+Given products containing categories and nested information, write a function that can:
+
+find products in a category
+find the cheapest product
+calculate category total
+return product names only
+
+You must handle an absent category without crashing.
+
+E14 — Closure-Based Counter Factory
+
+Create:
+
+createCounter(start)
+
+The returned object/function should allow the caller to:
+
+increment
+decrement
+getValue
+reset
+
+The internal value should not be directly accessible from outside.
+
+E15 — Retry an Async Operation
+
+Create an asynchronous function that attempts an asynchronous operation.
+
+If it fails, retry it up to a supplied maximum number of attempts.
+
+Your implementation must correctly handle:
+
+success
+failure
+maximum retries
+final error
+
+Use Promises / async / await.
+
+SECTION F — MULTI-CONCEPT PROBLEMS
+10 Questions
+
+These are deliberately designed so you cannot solve them by remembering one method.
+
+F1 — Employee Analyzer
+
+Use:
+
+Array
++
+Objects
++
+Functions
++
+filter
++
+map
++
+reduce
+
+Create a function that receives employees and returns:
+
+employees earning above a threshold
+their names
+total salary
+average salary
+F2 — Cart + Discounts
+
+Create a cart where each item contains:
+
+name
+price
+quantity
+
+Create a function that calculates the final bill using a supplied discount rule.
+
+Use a callback for the discount logic.
+
+F3 — Secure Counter
+
+Build a counter using a closure.
+
+It should support:
+
+increment
+decrement
+get
+reset
+
+The internal counter value must not be directly accessible.
+
+F4 — Library + Prototype
+
+Create a constructor function:
+
+Book
+
+Give every book common prototype methods such as:
+
+borrow()
+returnBook()
+getInfo()
+
+Create multiple book instances.
+
+F5 — Class-Based Library
+
+Rewrite the previous problem using:
+
+class
+constructor
+instance methods
+private field
+
+The borrowed state should not be directly changeable from outside.
+
+F6 — Promise Dashboard
+
+Imagine three independent operations:
+
+getUsers()
+getProducts()
+getOrders()
+
+Each returns a Promise.
+
+Create an async function that obtains all three results efficiently.
+
+F7 — Promise Failure Analysis
+
+Create three promises where:
+
+one resolves quickly
+one rejects
+one resolves slowly
+
+Use each of:
+
+Promise.all
+Promise.allSettled
+Promise.race
+Promise.any
+
+Demonstrate the behavioral difference through code.
+
+F8 — Async Data Pipeline
+
+Create:
+
+fetch data
+↓
+check response
+↓
+parse JSON
+↓
+filter data
+↓
+transform data
+↓
+calculate result
+
+Use async/await and appropriate error handling.
+
+F9 — Persistent Todo System
+
+Build todo logic that:
+
+loads todos from localStorage
+adds todo
+completes todo
+removes todo
+saves updated todos
+
+Use:
+
+JSON.stringify
+JSON.parse
+
+and avoid unnecessary mutation where appropriate.
+
+F10 — Modular Application
+
+Design a small application split into multiple modules.
+
+You should have at least:
+
+data module
+logic module
+utility module
+main module
+
+Use ES module syntax and demonstrate:
+
+named export
+default export
+import
+renaming
+SECTION G — EXPLAIN THE CODE
+10 Questions
+
+Your answer should explain exactly what is happening and WHY, not merely the final output.
+
+G1
+function outer() {
+    let message = "Hello";
+
+    return function inner() {
+        console.log(message);
+    };
+}
+
+const fn = outer();
+fn();
+
+Explain the closure.
+
+G2
+const user = {
+    name: "Rahul",
+
+    show() {
+        setTimeout(() => {
+            console.log(this.name);
+        }, 1000);
+    }
+};
+
+user.show();
+
+Explain why the arrow function matters here.
+
+G3
+function Person(name) {
+    this.name = name;
+}
+
+Person.prototype.greet = function () {
+    return "Hi " + this.name;
+};
+
+const p = new Person("Rahul");
+
+console.log(p.greet());
+
+Explain where greet is stored and how p finds it.
+
+G4
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+
+    greet() {
+        return "Hi " + this.name;
+    }
+}
+
+Explain the relationship between this class and prototypes.
+
+G5
+Promise.resolve()
+    .then(() => console.log("A"));
+
+setTimeout(() => {
+    console.log("B");
+}, 0);
+
+console.log("C");
+
+Explain the execution mechanism rather than only the output.
+
+G6
+async function test() {
+    console.log("A");
+    await Promise.resolve();
+    console.log("B");
+}
+
+test();
+
+console.log("C");
+
+Explain what await does to execution.
+
+G7
+const user = {
+    name: "Rahul",
+    address: null
+};
+
+const city = user.address?.city ?? "Unknown";
+
+console.log(city);
+
+Explain both operators separately and then explain their combination.
+
+G8
+const user = {
+    name: "Rahul",
+    age: 22
+};
+
+const updated = {
+    ...user,
+    age: 23
+};
+
+Explain:
+
+what object is created
+whether user changes
+what spread is doing
+whether this is a deep copy
+G9
+try {
+    const data = JSON.parse("invalid");
+    console.log(data);
+} catch (error) {
+    console.log(error.message);
+} finally {
+    console.log("Done");
+}
+
+Explain the complete control flow.
+
+G10
+const user = {
+    name: "Rahul",
+    age: 22
+};
+
+localStorage.setItem("user", JSON.stringify(user));
+
+const saved = JSON.parse(localStorage.getItem("user"));
+
+console.log(saved.name);
+
+Explain every conversion that happens.
+
+SECTION H — REAL-WORLD JAVASCRIPT PROBLEMS
+8 Problems
+
+These are intentionally less structured. You must decide which concepts to combine.
+
+H1 — To-Do Application Core
+
+Build the complete in-memory logic for:
+
+Add
+Complete
+Delete
+Search
+Filter pending
+Filter completed
+
+Use arrays of objects.
+
+H2 — Student Management
+
+Create a student management system supporting:
+
+Add student
+Remove student
+Update marks
+Calculate average
+Find topper
+Find failed students
+Search by name
+H3 — Shopping Cart
+
+Implement:
+
+Add product
+Increase quantity
+Decrease quantity
+Remove product
+Calculate subtotal
+Calculate total
+Find most expensive item
+H4 — Library System
+
+Implement a library where:
+
+Books can be added
+Books can be borrowed
+Books can be returned
+Available books can be listed
+
+Handle invalid operations correctly.
+
+H5 — Search + Filter System
+
+Given an array of products, create a search function that can combine:
+
+search term
+category
+maximum price
+minimum price
+availability
+
+All filters should work together.
+
+H6 — Persistent Theme/Data
+
+Create a small persistence system where:
+
+setTheme()
+getTheme()
+saveUser()
+getUser()
+clearData()
+
+Use browser storage and JSON where necessary.
+
+H7 — API Data Processor
+
+Create an async function that:
+
+fetches data
+checks response
+parses JSON
+handles errors
+filters the data
+transforms the data
+returns the final result
+H8 — Async Dashboard
+
+Simulate a dashboard that requires:
+
+users
+orders
+products
+
+Each operation should return a Promise with a different delay.
+
+Build the dashboard so independent requests are handled efficiently.
+
+🧨 BONUS CHALLENGE — UNFAMILIAR PROBLEMS
+
+These are not intended to look exactly like the examples from your notes.
+
+X1
+
+Create a function that receives an array of objects and a callback.
+
+The callback should determine whether each object belongs in the final result.
+
+Your function should return a new array without modifying the original.
+
+X2
+
+Create a function:
+
+createValidator(rules)
+
+It should return another function that validates an object according to the supplied rules.
+
+Use closures.
+
+X3
+
+Create an async function that receives multiple asynchronous tasks and returns the results while ensuring that one failure does not destroy the information from successful tasks.
+
+Choose the appropriate Promise mechanism yourself.
+
+X4
+
+Create a modular mini-application where a utility is dynamically loaded only when a particular feature is requested.
+
+X5
+
+Build a small system that:
+
+receives data
+→ validates it
+→ transforms it
+→ stores it
+→ retrieves it
+→ handles invalid data
+
+You must decide which JavaScript concepts from Phases 1–6 belong at each stage.
