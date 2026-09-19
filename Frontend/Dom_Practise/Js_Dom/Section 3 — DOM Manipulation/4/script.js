@@ -1,0 +1,5 @@
+const box=document.querrySelector("#box")
+box.classList.add("active")
+box.classList.remove("container")
+box.classList.toggle("dark")
+box.classList.contains("active")

@@ -1,0 +1,225 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+/* =========================
+   Search Section
+========================= */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+
+/* =========================
+   Category Section
+========================= */
+
+.cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+/* =========================
+   Product Container
+========================= */
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+  padding: 30px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   Product Card
+========================= */
+
+.product {
+  width: 100%;
+  min-height: 180px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  background-color: white;
+
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* Product hover */
+
+.product:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   Product Category
+========================= */
+
+#category {
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   Product Name
+========================= */
+
+.product h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+
+/* =========================
+   Product Price
+========================= */
+
+.product .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #008000;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.product button {
+  border: none;
+
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  background-color: #222;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.product button:hover {
+  background-color: #444;
+}
+
+
+/* =========================
+   Inputs
+========================= */
+
+.search input {
+  width: 300px;
+  max-width: 90%;
+
+  padding: 12px 15px;
+
+  border: 2px solid #ddd;
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.search input:focus {
+  border-color: #222;
+}
+
+
+/* =========================
+   Category Buttons
+========================= */
+
+.cat button {
+  padding: 9px 15px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  background-color: white;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.cat button:hover {
+  background-color: #222;
+  color: white;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+  .search {
+    padding: 20px 10px;
+  }
+
+  #products {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .product {
+    min-height: 160px;
+  }
+}
+
