@@ -1,15 +1,22 @@
-let secret=Math.floor(Math.random()*100)+1
-let attempt=0;
-let guess;
+let rn=45
+let guess=null
+let attemp=0
 
-do{
-guess=Number(prompt("Enter The Number :  "))
-attempt++
-if(guess>secret) console.log("too High")
-else if (guess<secret) console.log("too low")
 
-}while(guess !== secret && attempt<3)
 
-if(guess!== secret) console.log(`You Loose the right number was  ${secret} `)
 
-else console.log(`you got the right number ${secret} in ${attempt} attempts`)
+while(guess!==rn){
+let input=prompt("Enter the number ")
+guess=Number(input)
+
+if(guess>rn){
+    console.log("guess is too high");
+}
+else if(guess<rn){
+    console.log("Guess Is Too Low");
+}
+else{
+    console.log("You Guess the coreect number");
+}
+
+}
